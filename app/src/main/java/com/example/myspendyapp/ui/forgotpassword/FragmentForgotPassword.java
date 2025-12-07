@@ -1,4 +1,4 @@
-package com.example.myspendyapp.ui;
+package com.example.myspendyapp.ui.forgotpassword;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 public class FragmentForgotPassword extends Fragment {
 
 
-    public ForgotPasswordFragment() {
+    public void ForgotPasswordFragment() {
         // Required empty constructor
     }
 

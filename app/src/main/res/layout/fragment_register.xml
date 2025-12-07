@@ -49,7 +49,7 @@
             android:hint="Nhập tên đăng nhập"
             android:paddingLeft="10dp"
             android:background="@drawable/edittext_border"
-            android:drawableLeft="@drawable/ic_phone"
+            android:drawableLeft="@drawable/ic_username"
             android:drawablePadding="10dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center_vertical"/>
