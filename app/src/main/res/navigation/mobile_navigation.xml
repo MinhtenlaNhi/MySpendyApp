@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation"> <!-- Màn hình bắt đầu là Login -->
+    app:startDestination="@+id/navigation_login"> <!-- Màn hình bắt đầu là Login -->
 
     <!-- ===================== FRAGMENTS KHÔNG CÓ MENU DƯỚI ===================== -->
 
