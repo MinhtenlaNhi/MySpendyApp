@@ -1,4 +1,4 @@
-/*package com.example.myspendyapp.ui;
+package com.example.myspendyapp.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -39,4 +39,4 @@ public class FragmentForgotPassword extends Fragment {
             }
         });
     }
-} */
+}

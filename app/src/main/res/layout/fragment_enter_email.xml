@@ -1,0 +1,85 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"/>
+
+        <!-- App Name -->
+        <ImageView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spendy"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"/>
+        <!-- Title Quên mật khẩu-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Quên mật khẩu"
+            android:textColor="#2FA48F"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Đừng lo lắng! Vui lòng nhập số điện thoại hoặc địa chỉ email
+             của bạn để gửi mã xác minh "
+            android:layout_gravity="center"/>
+
+        <!-- Email label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textColor="#2FA48F"
+            android:textStyle="bold" />
+        <!-- Email input -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nhập email "
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"/>
+        <!-- Button xác minh -->
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Xác minh"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2FA48F"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/baloo2_medium"/>
+
+    </LinearLayout>
+</ScrollView>
