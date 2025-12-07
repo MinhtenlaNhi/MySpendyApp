@@ -61,7 +61,7 @@
             android:layout_gravity="center_vertical"/>
         <!-- Button xác minh -->
         <Button
-            android:id="@+id/btnConfirm"
+            android:id="@+id/btnVerifyOtp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Xác minh"

@@ -166,7 +166,7 @@
         android:layout_gravity="center"/>
 
     <TextView
-        android:id="@+id/txtRegister"
+        android:id="@+id/txtRegisterHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Đăng ký tại đây"
