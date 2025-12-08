@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_login_to_enter_email" type="id" />
+    <item name="navigation_enter_email" type="id" />
+    <item name="action_enter_email_to_reset_password" type="id" />
+    <item name="navigation_reset_password" type="id" />
+</resources>
