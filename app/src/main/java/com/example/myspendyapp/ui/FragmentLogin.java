@@ -16,6 +16,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.myspendyapp.R;
+import com.example.myspendyapp.repository.UserRepository;
 
 public class FragmentLogin extends Fragment {
 
@@ -41,16 +42,16 @@ public class FragmentLogin extends Fragment {
 
         NavController navController = Navigation.findNavController(view);
 
+        UserRepository repo = new UserRepository(getContext());
         // Xử lý Login
         btnLogin.setOnClickListener(v -> {
             String user = edtUsername.getText().toString();
             String pass = edtPassword.getText().toString();
 
-            if (user.isEmpty() || pass.isEmpty()) {
-                Toast.makeText(getContext(), "Không được để trống!", Toast.LENGTH_SHORT).show();
-            } else {
-                Toast.makeText(getContext(), "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+            if (repo.login(user, pass)) {
                 navController.navigate(R.id.action_login_to_home);
+            } else {
+                Toast.makeText(getContext(), "Sai tài khoản hoặc mật khẩu!", Toast.LENGTH_SHORT).show();
             }
         });
 
