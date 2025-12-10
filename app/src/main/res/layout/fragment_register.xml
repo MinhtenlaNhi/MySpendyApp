@@ -47,12 +47,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Nhập tên đăng nhập"
-            android:paddingLeft="10dp"
             android:background="@drawable/edittext_border"
-            android:drawableLeft="@drawable/ic_phone"
+            android:drawableStart="@drawable/ic_phone"
             android:drawablePadding="10dp"
             android:layout_marginTop="5dp"
-            android:layout_gravity="center_vertical"/>
+            android:layout_gravity="center_vertical" />
         <!-- PhoneNumber label -->
         <TextView
             android:layout_width="wrap_content"
@@ -68,9 +67,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Nhập số điện thoại"
-            android:paddingLeft="10dp"
             android:background="@drawable/edittext_border"
-            android:drawableLeft="@drawable/ic_phone"
+            android:drawableStart="@drawable/ic_phone"
             android:drawablePadding="10dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center_vertical"/>
@@ -89,9 +87,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Nhập email "
-            android:paddingLeft="10dp"
             android:background="@drawable/edittext_border"
-            android:drawableLeft="@drawable/ic_email"
+            android:drawableStart="@drawable/ic_email"
             android:drawablePadding="10dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center_vertical"/>
@@ -112,10 +109,9 @@
             android:layout_height="50dp"
             android:hint="Nhập mật khẩu"
             android:inputType="textPassword"
-            android:paddingLeft="10dp"
             android:background="@drawable/edittext_border"
-            android:drawableLeft="@drawable/ic_lock"
-            android:drawableRight="@drawable/ic_eye_close"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_eye_close"
             android:drawablePadding="10dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center_vertical"/>
@@ -136,10 +132,9 @@
             android:layout_height="50dp"
             android:hint="Xác nhận mật khẩu"
             android:inputType="textPassword"
-            android:paddingLeft="10dp"
             android:background="@drawable/edittext_border"
-            android:drawableLeft="@drawable/ic_lock"
-            android:drawableRight="@drawable/ic_eye_close"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_eye_close"
             android:drawablePadding="10dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center_vertical"/>
@@ -149,7 +144,7 @@
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#2FA48F"
             android:fontFamily="@font/baloo2_medium"
             android:text="Đăng ký"

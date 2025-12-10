@@ -13,16 +13,16 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import com.example.myspendyapp.R;
-import com.example.myspendyapp.databinding.FragmentEnterEmailBinding;
+import com.example.myspendyapp.databinding.FragmentEnterPhoneNumberBinding;
 
-public class FragmentEnterEmail extends Fragment {
+public class FragmentEnterPhoneNumber extends Fragment {
 
-    private FragmentEnterEmailBinding binding;
+    private FragmentEnterPhoneNumberBinding binding;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Khởi tạo Binding
-        binding = FragmentEnterEmailBinding.inflate(inflater, container, false);
+        binding = FragmentEnterPhoneNumberBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

@@ -25,7 +25,7 @@
         <!-- Action để sang màn hình Quên mật khẩu -->
         <action
             android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
-            app:destination="@id/forgotPasswordFragment" />
+            app:destination="@id/fragmentEnterPhoneNumber" />
 
     </fragment>
 
@@ -42,10 +42,44 @@
             app:popUpToInclusive="true"/>
     </fragment>
 
+
+    <!-- MÀN HÌNH 1: NHẬP SỐ ĐIỆN THOẠI-->
     <fragment
-        android:id="@+id/forgotPasswordFragment"
-        android:name="com.example.myspendyapp.ui.forgotpassword.FragmentForgotPassword"
-        android:label="Forgot Password" />
+        android:id="@+id/fragmentEnterPhoneNumber"
+        android:name="com.example.myspendyapp.ui.forgotpassword.FragmentEnterPhoneNumber"
+        android:label="Enter Phone Number"
+        tools:layout="@layout/fragment_enter_phone_number">
+        <!-- Chuyển sang màn OTP -->
+        <action
+            android:id="@+id/action_enterPhone_to_enterOtp"
+            app:destination="@id/fragmentEnterOtp" />
+    </fragment>
+
+
+    <!-- MÀN HÌNH 2: NHẬP OTP-->
+    <fragment
+        android:id="@+id/fragmentEnterOtp"
+        android:name="com.example.myspendyapp.ui.forgotpassword.FragmentEnterOtp"
+        android:label="Enter OTP"
+        tools:layout="@layout/fragment_enter_otp">
+
+        <!-- Chuyển sang màn Reset Password -->
+        <action
+            android:id="@+id/action_enterOtp_to_resetPassword"
+            app:destination="@id/fragmentResetPassword" />
+    </fragment>
+
+        <!-- MÀN HÌNH 3: ĐẶT LẠI MẬT KHẨU-->
+    <fragment
+        android:id="@+id/fragmentResetPassword"
+        android:name="com.example.myspendyapp.ui.forgotpassword.FragmentResetPassword"
+        android:label="Reset Password"
+        tools:layout="@layout/fragment_reset_password">
+        <!-- Chuyển sang màn Reset Password -->
+        <action
+            android:id="@+id/action_reset_password_to_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
 
     <!-- ===================== FRAGMENTS CÓ MENU DƯỚI ===================== -->
 
