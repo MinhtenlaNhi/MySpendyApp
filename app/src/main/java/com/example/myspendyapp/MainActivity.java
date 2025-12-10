@@ -20,11 +20,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        BottomNavigationView navView = findViewById(R.id.nav_view);
 
-        // Định nghĩa các màn hình cấp cao nhất (không có nút Back)
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_spending,
                 R.id.navigation_notifications, R.id.navigation_account)
@@ -32,17 +33,17 @@ public class MainActivity extends AppCompatActivity {
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(binding.navView, navController);
+        NavigationUI.setupWithNavController(navView, navController);
 
         // === LOGIC ẨN/HIỆN BOTTOM NAVIGATION ===
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
-            // Kiểm tra ID của màn hình đích
+
             if (destination.getId() == R.id.navigation_login || destination.getId() == R.id.navigation_register) {
-                binding.navView.setVisibility(View.GONE); // Ẩn BottomNav
+                navView.setVisibility(View.GONE); // Ẩn BottomNav
                 getSupportActionBar().hide(); // Ẩn ActionBar
             } else {
-                binding.navView.setVisibility(View.VISIBLE); // Hiện BottomNav
-                getSupportActionBar().show(); // Hiện ActionBar
+                navView.setVisibility(View.VISIBLE); // Hiện BottomNav
+                getSupportActionBar().show(); // Hiện ActionBarf
             }
         });
     }

@@ -60,7 +60,7 @@
             android:layout_marginTop="77dp"
             android:layout_gravity="center_vertical"/>
         <!-- Button xác minh -->
-        <Button
+        <FrameLayout
             android:id="@+id/btnVerifyOtp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -69,7 +69,13 @@
             android:textColor="#FFFFFF"
             android:backgroundTint="#2FA48F"
             android:layout_marginTop="50dp"
-            android:fontFamily="@font/baloo2_medium"/>
+            android:fontFamily="@font/baloo2_medium">
+            <action
+                android:id="@+id/action_fragmentEnterEmail_to_fragmentEnterOtp"
+                app:destination="@id/fragmentEnterOtp" />
+        </FrameLayout>
+
+
 
     </LinearLayout>
 </ScrollView>

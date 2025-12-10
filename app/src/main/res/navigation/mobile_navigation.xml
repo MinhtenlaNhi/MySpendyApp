@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation"> <!-- Màn hình bắt đầu là Login -->
+    app:startDestination="@+id/navigation_login"> <!-- Màn hình bắt đầu là Login -->
 
     <!-- ===================== FRAGMENTS KHÔNG CÓ MENU DƯỚI ===================== -->
 
@@ -26,6 +26,7 @@
         <action
             android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
             app:destination="@id/forgotPasswordFragment" />
+
     </fragment>
 
     <fragment
@@ -43,7 +44,7 @@
 
     <fragment
         android:id="@+id/forgotPasswordFragment"
-        android:name="com.example.myspendyapp.ui.FragmentForgotPassword"
+        android:name="com.example.myspendyapp.ui.forgotpassword.FragmentForgotPassword"
         android:label="Forgot Password" />
 
     <!-- ===================== FRAGMENTS CÓ MENU DƯỚI ===================== -->

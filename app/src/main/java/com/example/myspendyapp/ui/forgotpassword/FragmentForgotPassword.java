@@ -9,18 +9,23 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+// Ensure this import exists after the Rebuild
+import com.example.myspendyapp.databinding.FragmentForgotPasswordBinding;
 
 public class FragmentForgotPassword extends Fragment {
 
+    // CHANGED: Use the correct Binding class here
+    private FragmentForgotPasswordBinding binding;
 
-    public void ForgotPasswordFragment() {
-        // Required empty constructor
+    public FragmentForgotPassword() { // Fixed constructor name
+        // Required empty public constructor
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
+        // Now the types match
         binding = FragmentForgotPasswordBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }

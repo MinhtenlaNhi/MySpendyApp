@@ -4,6 +4,10 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
     namespace = "com.example.myspendyapp"
     compileSdk = 34
 
@@ -33,4 +37,6 @@ dependencies {
     // Navigation (phiên bản cho Java)
     implementation("androidx.navigation:navigation-fragment:2.5.3")
     implementation("androidx.navigation:navigation-ui:2.5.3")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.10"))
 }
