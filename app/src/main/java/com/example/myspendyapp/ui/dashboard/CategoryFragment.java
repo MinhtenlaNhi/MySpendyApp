@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.myspendyapp.databinding.FragmentDashboardBinding;
+import com.example.myspendyapp.databinding.FragmentCategoryBinding;
 
-public class DashboardFragment extends Fragment {
+public class CategoryFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentCategoryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        CategoryViewModel dashboardViewModel =
+                new ViewModelProvider(this).get(CategoryViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentCategoryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textTitle;
