@@ -18,7 +18,7 @@
             android:id="@+id/headerBg"
             android:layout_width="match_parent"
             android:layout_height="260dp"
-            android:background="#16A085"
+            android:background="@color/main_green"
             android:orientation="vertical"
             android:paddingHorizontal="16dp"
             android:paddingTop="24dp">

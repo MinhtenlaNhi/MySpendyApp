@@ -24,8 +24,15 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.tvTongChi;
+        final TextView tvTongChi = binding.tvTongThu;
+        final TextView tvConLai  = binding.tvConLai;
+        // Ví dụ set dữ liệu test
+        binding.tvTongThu.setText("+ 5,000,000");
+        binding.tvTongChi.setText("- 2,000,000");
+        binding.tvConLai.setText("3,000,000");
+
+        //.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

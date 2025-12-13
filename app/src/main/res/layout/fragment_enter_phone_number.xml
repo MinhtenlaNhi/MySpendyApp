@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/quen_mat_khau"
-            android:textColor="#2FA48F"
+            android:textColor="@color/main_green"
             android:textStyle="bold"
             android:textSize="30sp"
             android:layout_gravity="center"/>
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Số điện thoại"
-            android:textColor="#2FA48F"
+            android:textColor="@color/main_green"
             android:textStyle="bold" />
 
         <EditText
@@ -76,7 +76,7 @@
             android:text="Xác minh"
             android:textSize="18sp"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#2FA48F"
+            android:backgroundTint="@color/main_green"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/baloo2_medium"/>
     </LinearLayout>

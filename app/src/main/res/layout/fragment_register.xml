@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Tên đăng nhập"
-            android:textColor="#2FA48F"
+            android:textColor="@color/main_green"
             android:textStyle="bold" />
 
         <!-- Username input -->
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Số điện thoaị"
-            android:textColor="#2FA48F"
+            android:textColor="@color/main_green"
             android:textStyle="bold" />
 
         <!-- PhoneNumber input -->
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Email"
-            android:textColor="#2FA48F"
+            android:textColor="@color/main_green"
             android:textStyle="bold" />
 
         <!-- Email input -->
@@ -99,7 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Mật khẩu"
-            android:textColor="#2FA48F"
+            android:textColor="@color/main_green"
             android:textStyle="bold" />
 
         <!-- Password input -->
@@ -122,7 +122,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Nhập lại mật khẩu"
-            android:textColor="#2FA48F"
+            android:textColor="@color/main_green"
             android:textStyle="bold" />
 
         <!-- Password input -->
@@ -145,7 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="#2FA48F"
+            android:backgroundTint="@color/main_green"
             android:fontFamily="@font/baloo2_medium"
             android:text="Đăng ký"
             android:textColor="#FFFFFF"
@@ -166,7 +166,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/baloo2_medium"
             android:text="Đăng nhập"
-            android:textColor="#2FA48F" />
+            android:textColor="@color/main_green" />
 
     </LinearLayout>
 </ScrollView>
