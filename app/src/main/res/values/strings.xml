@@ -15,4 +15,9 @@
     <string name="app_name1">App Name</string>
     <string name="quen_mat_khau">Quên mật khẩu</string>
 
+    <string name="title_income_expense">Thu chi</string>
+    <string name="balance">Số dư</string>
+    <string name="income">Thu</string>
+    <string name="expense">Chi</string>
+
 </resources>

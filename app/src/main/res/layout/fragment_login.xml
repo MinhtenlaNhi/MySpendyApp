@@ -73,8 +73,8 @@
         android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:background="@drawable/edittext_border"
-        android:drawableLeft="@drawable/ic_lock"
-        android:drawableRight="@drawable/ic_eye_close"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_eye_close"
         android:drawablePadding="10dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center_vertical"/>

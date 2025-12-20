@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6F7F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ===== TIÊU ĐỀ ===== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Tạo danh mục mới"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- ===== DANH MỤC ===== -->
+        <TextView
+            android:text="Loại danh mục"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_category_type"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Chọn loại danh mục"
+            android:drawableEnd="@drawable/ic_input"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"/>
+
+        <!-- ===== NGÀY ===== -->
+        <TextView
+            android:text="Tên danh mục"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Tên danh mục"
+            android:focusable="false"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"/>
+
+        <!-- ===== Icon (không biết có nên bỏ đi không) ===== -->
+        <TextView
+            android:text="Icon"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/slt_icon"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Chọn icon"
+            android:drawableEnd="@drawable/ic_input"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"/>
+
+        <!-- ===== Màu sắc (Không biết có nên bỏ phần này không) ===== -->
+        <TextView
+            android:text="Màu sắc"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/slt_color"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Chọn màu sắc"
+            android:inputType="number"
+            android:drawableEnd="@drawable/ic_color_palette"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"/>
+
+        <!-- ===== NÚT ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="28dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Huỷ"
+                android:background="#BDBDBD"
+                android:textColor="#000000"/>
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Lưu"
+                android:background="@color/main_green"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

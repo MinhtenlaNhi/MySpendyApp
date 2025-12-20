@@ -28,6 +28,7 @@ android {
 dependencies {
     // Room cho Java
     implementation("androidx.room:room-runtime:2.5.2")
+    implementation(libs.recyclerview)
     annotationProcessor("androidx.room:room-compiler:2.5.2")
 
     // ViewModel & LiveData cho Java
